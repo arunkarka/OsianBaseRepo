@@ -24,6 +24,7 @@ import android.widget.ListView;
 
 import com.osian.screens.AboutOsianActivity;
 import com.osian.screens.ContactActivity;
+import com.osian.screens.SettingsActivity;
 
 public class OsianMainActivity extends ActionBarActivity {
 	private DrawerLayout mDrawerLayout;
@@ -106,12 +107,18 @@ public class OsianMainActivity extends ActionBarActivity {
         // Handle action buttons
         switch(item.getItemId()) {
         case R.id.action_contact:
-        	Intent intent = new Intent(this, ContactActivity.class);
-        	startActivity(intent);
+        	Intent intentContact = new Intent(this, ContactActivity.class);
+        	startActivity(intentContact);
+        	break;
+        case R.id.action_settings:
+        	Intent intentSettings = new Intent(this, SettingsActivity.class);
+        	startActivity(intentSettings);
+        	break;
         
         default:
             return super.onOptionsItemSelected(item);
         }
+		return false;
     }
 
     /* The click listner for ListView in the navigation drawer */

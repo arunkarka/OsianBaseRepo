@@ -21,6 +21,7 @@
             android:windowSoftInputMode="adjustResize|stateVisible" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -35,10 +36,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.osian.main.OsianMainActivity" />
         </activity>
-        
         <activity
             android:name="com.osian.screens.AboutOsianActivity"
             android:label="@string/title_activity_about_osian" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.osian.main.OsianMainActivity" />
+        </activity>
+        <activity
+            android:name="com.osian.screens.SettingsActivity"
+            android:label="@string/title_activity_settings" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.osian.main.OsianMainActivity" />
