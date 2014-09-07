@@ -3,6 +3,7 @@ package com.osian.main;
 import java.util.Locale;
 
 import com.arun.mytelugusonglyrics.R;
+import com.osian.screens.ContactActivity;
 
 import android.app.SearchManager;
 import android.content.Intent;
@@ -111,7 +112,9 @@ public class OsianMainActivity extends ActionBarActivity {
         }
         // Handle action buttons
         switch(item.getItemId()) {
-        
+        case R.id.action_contact:
+        	Intent intent = new Intent(this, ContactActivity.class);
+        	startActivity(intent);
         
         default:
             return super.onOptionsItemSelected(item);
@@ -122,7 +125,17 @@ public class OsianMainActivity extends ActionBarActivity {
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            selectItem(position);
+            switch (position) {
+			case 5:
+				Intent intent = new Intent(OsianMainActivity.this, ContactActivity.class);
+	        	startActivity(intent);
+				
+				break;
+
+			default:
+				break;
+			}
+        	selectItem(position);
         }
     }
 

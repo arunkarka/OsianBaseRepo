@@ -3,6 +3,7 @@
     package="com.arun.mytelugusonglyrics"
     android:versionCode="1"
     android:versionName="1.0" >
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-sdk
@@ -23,7 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+        <activity
+            android:name="com.osian.screens.ContactActivity"
+            android:label="@string/title_activity_contact" >
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.osian.main.OsianMainActivity" />
+        </activity>
     </application>
 
 </manifest>
