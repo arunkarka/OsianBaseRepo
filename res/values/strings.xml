@@ -21,5 +21,6 @@
     <string name="action_about">About</string>
     <string name="title_activity_contact">Contact info</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_about_osian">MainActivity</string>
 
 </resources>

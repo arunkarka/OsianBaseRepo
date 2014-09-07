@@ -2,15 +2,8 @@ package com.osian.main;
 
 import java.util.Locale;
 
-import com.arun.mytelugusonglyrics.LoginActivity;
-import com.arun.mytelugusonglyrics.R;
-import com.osian.screens.ContactActivity;
-
-import android.app.SearchManager;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -24,14 +17,13 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
+
+import com.osian.screens.AboutOsianActivity;
+import com.osian.screens.ContactActivity;
 
 public class OsianMainActivity extends ActionBarActivity {
 	private DrawerLayout mDrawerLayout;
@@ -127,6 +119,10 @@ public class OsianMainActivity extends ActionBarActivity {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
             switch (position) {
+            case 2:
+				Intent intentAboutOsian = new Intent(OsianMainActivity.this, AboutOsianActivity.class);
+	        	startActivity(intentAboutOsian);
+	        	break;
 			case 5:
 				Intent intent = new Intent(OsianMainActivity.this, ContactActivity.class);
 	        	startActivity(intent);

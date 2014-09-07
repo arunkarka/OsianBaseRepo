@@ -1,9 +1,10 @@
 package com.osian.screens;
 
-import com.arun.mytelugusonglyrics.R;
 
-import android.support.v7.app.ActionBarActivity;
+import com.osian.main.R;
+
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
