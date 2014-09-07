@@ -2,6 +2,7 @@ package com.osian.main;
 
 import java.util.Locale;
 
+import com.arun.mytelugusonglyrics.LoginActivity;
 import com.arun.mytelugusonglyrics.R;
 import com.osian.screens.ContactActivity;
 
@@ -129,7 +130,10 @@ public class OsianMainActivity extends ActionBarActivity {
 			case 5:
 				Intent intent = new Intent(OsianMainActivity.this, ContactActivity.class);
 	        	startActivity(intent);
-				
+	        	break;
+			case 6:
+				Intent intentLogin = new Intent(OsianMainActivity.this, LoginActivity.class);
+	        	startActivity(intentLogin);
 				break;
 
 			default:
