@@ -50,6 +50,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.osian.main.OsianMainActivity" />
         </activity>
+        <activity
+            android:name="com.osian.screens.AboutOsianAppActivity"
+            android:label="@string/title_activity_about_osian_app" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
