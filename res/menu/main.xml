@@ -1,7 +1,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.arun.mytelugusonglyrics.MainActivity" >\
+    tools:context="com.osian.main.OsianMainActivity" >
+    <item
+        android:id="@+id/action_call"
+        android:icon="@drawable/ic_action_call"
+        android:title="@string/action_call"
+        app:showAsAction="always"/>
     <item
         android:id="@+id/action_contact"
         android:title="@string/action_contact"
